@@ -117,6 +117,10 @@ header {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--main-black-color);
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .site-nav .link:hover,
 .site-nav .link:focus,
@@ -133,6 +137,9 @@ header {
   align-items: center;
 
   fill: var(--secondary-text-color);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-link:hover .header-icon,
 .header-link:focus .header-icon {
@@ -145,6 +152,9 @@ header {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-address .header-link:hover,
 .header-address .header-link:focus {
@@ -349,7 +359,7 @@ header {
 .icon-list .social-network:focus {
   background-color: var(--extra-blue-color);
 }
-.icon {
+.icon-list li .icon {
   width: 20px;
   height: 20px;
   padding: 0;
@@ -359,6 +369,10 @@ header {
   justify-content: center;
   align-items: center;
   fill: var(--icon-bg-color);
+
+  transition-property: bacground-color fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-list li:hover .icon,
@@ -413,6 +427,10 @@ header {
   cursor: pointer;
 
   fill: var(--icon-bg-color);
+
+  transition-property: border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients-list .client:not(:last-child) {
   margin-right: 30px;
@@ -426,6 +444,10 @@ header {
   width: 106px;
   height: 60px;
   fill: var(--icon-bg-color);
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-list .client:hover .client-icon,
@@ -491,6 +513,10 @@ header {
   align-items: center;
   cursor: pointer;
   background-color: var(--icon-bgc-footer);
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-links > li:not(:last-child) {
   margin-right: 10px;
@@ -512,12 +538,6 @@ header {
   fill: var(--main-white-color);
 }
 
-.footer-links li:hover .icon,
-.ifooter-links li:focus .icon {
-  fill: var(--main-white-color);
-  background-color: var(--extra-blue-color);
-}
-
 /* Стили для страницы портфолио */
 .buttons-list {
   display: flex;
@@ -535,6 +555,10 @@ header {
   color: var(--main-black-color);
   border: 1px solid transparent;
   border-radius: 4px;
+
+  transition-property: background-color color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .buttons-list .buttons-list-element:hover {
   background-color: var(--extra-blue-color);
@@ -563,6 +587,16 @@ header {
   margin-left: var(--card-set-gap);
   margin-top: var(--card-set-gap);
   padding: 0px;
+
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.product-item:hover,
+.product-item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  cursor: pointer;
 }
 
 .name-product {
@@ -590,12 +624,6 @@ img {
   border-left: 1px solid var(--secondary-border-color);
   border-bottom: 1px solid var(--secondary-border-color);
   border-right: 1px solid var(--secondary-border-color);
-}
-
-.product-item:hover {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-  cursor: pointer;
 }
 
 .product-tumb {
